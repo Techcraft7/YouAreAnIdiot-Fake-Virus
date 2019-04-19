@@ -32,7 +32,7 @@ namespace YouAreAnIdiot
        int i = 0;
         private void webBrowser1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-            if (e.KeyCode == Keys.A)
+            if (e.KeyCode == Keys.Pause && (e.Alt |&& e.Control && e.Shift))
             {
                 Environment.Exit(0);
             }
